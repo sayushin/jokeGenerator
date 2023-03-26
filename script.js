@@ -13,7 +13,10 @@ function getJoke(){
         const jokeText =data.value
         console.log(jokeText) 
         joke.textContent=jokeText
+    } else {
+        joke.textContent='Something went wrong(Not funny)'
     }}
+
 
     xhr.send()
 
